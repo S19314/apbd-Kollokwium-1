@@ -28,8 +28,10 @@ namespace Kollokwium_1.Controllers
             return Ok(respondeList);
         }
 
+
+        [Route("api/patients")]
         [HttpDelete("{id}")]
-        // [HttpDelete]
+         
         public IActionResult deletePatientAndInfo(int id) {
             int value = _hospitalDbService.deletePatientAndInfo(id);
             if(value == 200) return Ok("Patient was deleted");

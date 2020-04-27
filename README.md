@@ -1,1 +1,0 @@
-# apbd-Kollokwium-1
